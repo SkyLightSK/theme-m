@@ -1,0 +1,39 @@
+.site-branding {
+
+  top: 24%;
+  position: absolute;
+  left: 41%;
+  transform: translate(-37%, -19%);
+
+  img {
+    min-height: unset;
+    max-width: 100%;
+  }
+
+  &.home-branding {
+    top: 24%;
+    position: absolute;
+    left: 41%;
+    transform: translate(-37%, -19%);
+
+    img {
+      min-height: unset;
+      max-width: 100%;
+    }
+  }
+
+  @media (min-width: 992px) {
+    top: 4%;
+    position: absolute;
+    right: 0%;
+    left: unset;
+    transform: unset;
+
+    img {
+      min-height: 350px;
+      max-width: 666px;
+    }
+  }
+
+}
+

@@ -1,0 +1,281 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.site-main {
+
+	&.mogul-posts-main {
+		max-height: 1500px;
+		overflow-y: scroll;
+		text-align: center;
+
+		.entry-title{
+			border-bottom: 1px solid $color__border;
+			margin: 0;
+			padding: 44px 0
+		}
+		
+		@media (min-width: 800px) {
+			padding: 0px 135px;
+		}
+	}
+
+	.tab-content{
+
+		&.portfolio-gallery {
+			padding: 25px 0px;
+
+			.tab-panel{
+				padding: 25px 0px;
+				border-top: 1px solid $color__border;
+				border-bottom: 1px solid $color__border;
+
+				.portfolio-gallery-col{
+					padding: 0px 4px;
+					@media (min-width: 992px) {
+						padding: 0px 8px;
+					}
+				}
+			}
+
+			.portfolio-gallery-container{
+				@media (min-width: 992px) {
+					max-width: 1520px;
+				}
+			}
+
+			.content{
+				h1,h2,h3,h4,h5,
+				p{
+					margin: 34px 0px;
+				}
+
+			}
+
+		}
+
+		.mogul-portfolio-content{
+			@media (min-width: 992px) {
+				max-width: 970px;
+				padding: 150px 15px;
+			}
+		}
+
+		@media (min-width: 992px) {
+			margin: 0px 35px;
+		}
+
+		&.services-wrap {
+
+			.tab-panel{
+
+				.services-container{
+
+					@media (min-width: 992px) {
+						max-width: 1420px;
+					}
+
+					.service-col{
+						padding: 0px 74px;
+						margin: 80px 0px;
+						font-size: 24px;
+
+						h4{
+							letter-spacing: 4.8px;
+						}
+
+						@media (max-width: 768px) {
+							margin: 20px 0px;
+							padding: unset;
+						}
+					}
+				}
+
+				.additional-services, .travel-services{
+					padding: 25px 0px;
+					padding-bottom: 94px;
+					border-top: 1px solid $color__border;
+					border-bottom: 1px solid $color__border;
+
+					h3{
+						font-size: 24px;
+						text-transform: uppercase;
+						letter-spacing: 4.8px;
+						margin: 60px 0px;
+					}
+					.additional-container, .travel-container {
+
+						@media (min-width: 992px) {
+							max-width: 930px;
+						}
+
+						.service-col {
+							padding: 0px 42px;
+							margin: 0px;
+						}
+					}
+				}
+				.travel-services{
+					border-top: 0px solid $color__border;
+				}
+
+			}
+		}
+
+	}
+	.service-examples{
+
+		margin-bottom: 99px;
+
+		h3{
+			margin: 83px 0px;
+		}
+		.service-examples-container{
+
+			ul{
+				margin: 0px;
+				list-style-type: none;
+
+				li{
+					font-size: 24px;
+					line-height: 48px;
+					text-transform: uppercase;
+				}
+			}
+
+			@media (min-width: 992px) {
+				max-width: 900px
+			}
+		}
+	}
+
+	.review-list-container{
+		.review-list-col{
+			padding: 0px 92px;
+
+
+
+			.review-list-item{
+				padding: 36px 0px;
+				margin: 35px 0px;
+				font-size: 22px;
+				border-top: 1px solid $color__border;
+				border-bottom: 1px solid $color__border;
+			}
+			@media (max-width: 768px) {
+				padding: unset;
+
+				.review-list-item{
+					margin-top: 0px;
+				}
+			}
+		}
+
+
+		@media (min-width: 992px) {
+			max-width: 1524px
+		}
+	}
+	.review-buttons{
+		margin-top: 9px;
+	}
+	.additional-reviews{
+
+		margin-bottom: 100px;
+
+		h2{
+			font-size: 30px;
+			letter-spacing: 0.7px;
+			display: table;
+			margin: 50px auto;
+			border-top: 1px solid $color__border;
+			border-bottom: 1px solid $color__border;
+			padding: 28px 0px;
+		}
+
+		&.container{
+
+
+			.additional_review_item{
+				padding: 0px 30px;
+
+				&:not(:last-child):after {
+					content: '';
+					background-color: $color__border;
+					height: 68px;
+					width: 1px;
+					position: absolute;
+					right: 0;
+					top: 0;
+				}
+			}
+
+			@media (min-width: 992px) {
+				max-width: 1605px;
+			}
+		}
+
+		.additional-reviews-popup{
+
+			.additional-review-description{
+				margin: 20px 0px;
+			}
+			a{
+				color: white;
+			}
+		}
+
+		@media (max-width: 992px) {
+
+			.additional-reviews-list .row{
+				text-align: center;
+
+				.additional_review_item{
+					padding: 10px 30px;
+					&:after{
+						content: unset;
+					}
+				}
+			}
+		}
+
+	}
+
+}
+
+
+@media (min-width: 1024px) {
+	.page-content,
+	.entry-content,
+	.entry-summary {
+		margin: 3.1em 0 0;
+	}
+}
+
+
+.entry-content {
+
+	&-content-wrap{
+		//margin-bottom: 3em;
+	}
+	&-thumbnail-wrap{
+		margin: 6em 0;
+	}
+
+	img {
+		border: 1px solid black;
+		padding: 50px;
+	}
+}
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}

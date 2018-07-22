@@ -1,0 +1,108 @@
+.form-control{
+
+}
+
+.form-content {
+	position: relative;
+	.hidden-form {
+		display: none;
+
+		&.active {
+			display: block;
+		}
+	}
+
+	@media (min-width: 992px) {
+		textarea{
+			margin-bottom: 140px;
+		}
+	}
+
+}
+
+.contact-container {
+	position: relative;
+	.contact-appointment-button.appointment-form-callback {
+		img {
+			width: 182px;
+		}
+		@media (min-width: 992px) {
+			position: absolute;
+			top: 42px;
+			right: 0px;
+		}
+
+	}
+
+	.leave-review.review-form-callback {
+		img {
+			width: 178px;
+		}
+
+		@media (min-width: 1440px) {
+			position: absolute;
+			bottom: 43%;
+			right: -172px;
+
+		}
+
+		@media (max-width: 1440px) {
+			position: absolute;
+			bottom: 42%;
+			right: 0px;
+		}
+
+		@media (max-width: 1210px) {
+			position: absolute;
+			bottom: 49%;
+			right: 125px;
+		}
+		@media (max-width: 992px) {
+			position: relative;
+			bottom: unset;
+			right: unset;
+		}
+
+	}
+
+	.contact-appointment-button.appointment-form-callback, .leave-review.review-form-callback {
+		@media (min-width: 992px) {
+			position: absolute;
+		}
+	}
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: $color__text-input;
+	border: none !important;
+	border-radius: 0px !important;
+	padding: 3px;
+    background-color: #f4f5f4 !important;
+
+
+  &:focus {
+		color: $color__text-input-focus;
+	}
+}
+
+select {
+	border: 1px solid $color__border-input;
+}
+
+textarea {
+	width: 100%;
+}

@@ -1,0 +1,13 @@
+.custom-header-media{
+
+  &.home-header{
+    .wp-custom-header img{
+      width: 100%;
+      max-height: none;
+    }
+  }
+  .wp-custom-header img{
+    width: 100%;
+    max-height: 385px;
+  }
+}

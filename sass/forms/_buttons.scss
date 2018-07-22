@@ -1,0 +1,102 @@
+
+.submit-icon-wrap {
+	@media (min-width: 992px) {
+		transform: translate(359%, -260%);
+		position: absolute;
+	}
+
+		.submit-icon {
+
+		border-color: white !important;
+		border-radius: 50% !important;
+		color: $color__background-body !important;
+		background: $color__background-body !important;
+		font-size: 0px !important;
+		padding: .6em 1em .4em;
+		background-image: url(./assets/images/submit-button.png) !important;
+		background-size: cover;
+		width: 121px;
+		height: 121px;
+
+		&:focus {
+
+			outline: none;
+			box-shadow: none;
+		}
+		&:active {
+			outline: none;
+			box-shadow: none;
+		}
+	}
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid;
+	border-color: $color__border-button;
+	border-radius: 3px;
+	background: $color__background-button;
+	color: rgba(0, 0, 0, .8);
+	@include font-size(0.75);
+	line-height: 1;
+	padding: .6em 1em .4em;
+
+	&:hover {
+		border-color: $color__border-button-hover;
+	}
+
+	&:active,
+	&:focus {
+		border-color: $color__border-button-focus;
+	}
+
+
+}
+
+button{
+
+	&.review-load-more{
+
+		@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+		background-color: $color__text-main;
+		padding: 100px 6px;
+		border-radius: 50%;
+		cursor: pointer;
+
+		&:focus{
+			outline: unset;
+		}
+
+		&.loading {
+			animation:spin 4s linear infinite;
+		}
+
+		span {
+			padding: 86px 16px;
+			color: white;
+			background-color: $color__text-main;
+			border-radius: 50%;
+			font-size: 35px;
+			letter-spacing: 1.13px;
+			text-transform: uppercase;
+			border: 2px solid white;
+		}
+
+		&:disabled{
+			opacity: .7;
+			cursor: wait;
+		}
+
+		@media (max-width: 314px) {
+			padding: 71px 6px;
+
+			span{
+				padding: 60px 16px;
+				font-size: 18px;
+			}
+		}
+	}
+}

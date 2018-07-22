@@ -1,0 +1,152 @@
+/*================*/
+// Footer styles
+/*================*/
+
+footer.site-footer{
+  background-color: #282828;
+  color: white;
+  margin-top: 16px;
+
+  .footer-col{
+    margin: 0px;
+
+    &:not(:last-child){
+      border-right: 1px solid $color__background-body;
+    }
+
+    &:first-child{
+      margin-top: 30px;
+    }
+
+    @media (min-width: 992px) {
+
+      margin: 30px 0;
+
+      &:first-child{
+        margin-top: 30px;
+      }
+
+      &.footer-col-contact{
+        width: 711px;
+        max-width: 711px;
+      }
+    }
+
+    h4{
+      font-weight: bold;
+      letter-spacing: 1.2px;
+      margin: 34px 0px;
+    }
+    .text{
+      padding: 16px 0px;
+    }
+    p{
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 25.15px;
+      margin-bottom: 0px;
+      color: white;
+    }
+
+    form{
+      margin: 44px 0px;
+
+      input{
+        border-radius: 0px;
+        padding: 9px 20px;
+      }
+      
+      @media (max-width: 1440px) {
+        input{
+          width: 100%;
+
+        }
+      }
+
+    }
+
+    .footer-contacts{
+
+      margin: 48px 0px;
+
+      @media (max-width: 992px) {
+        text-align: center;
+      }
+
+      .footer-contact {
+
+        a {
+          color: white;
+        }
+        .footer-contact-item {
+          &.location {
+            position: relative;
+            text-align: center;
+            padding: 0px 26px;
+
+            &:before {
+              content: '';
+              position: absolute;
+              width: 13px;
+              height: 18px;
+              left: 0px;
+              background-image: url("./assets/images/icons/map-icon.png");
+            }
+          }
+
+          &.mail {
+            position: relative;
+            &:before {
+              content: '';
+              position: absolute;
+              width: 21px;
+              height: 15px;
+              top: 3px;
+              left: -33px;
+              background-image: url("./assets/images/icons/email-icon.png");
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
+          }
+
+          &.phone {
+            position: relative;
+            text-align: center;
+            padding: 0px 26px;
+            &:before {
+              content: '';
+              position: absolute;
+              width: 24px;
+              height: 16px;
+              left: -12px;
+              top: 4px;
+              background-image: url("./assets/images/icons/phone-icon.png");
+            }
+          }
+        }
+
+        @media (max-width: 1480px) {
+
+            flex: 100%;
+            max-width: 100%;
+
+        }
+      }
+    }
+
+    .footer-socials-menu{
+      background-color: transparent;
+      margin: 23px 0px;
+      justify-content: center;
+      .navbar-nav.menu{
+        margin: 0px;
+        flex-direction: unset;
+
+        li{
+          padding: 0px 6px;
+        }
+      }
+    }
+
+  }
+}
