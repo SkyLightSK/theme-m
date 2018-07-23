@@ -1291,33 +1291,40 @@ footer.site-footer .footer-col:not(:last-child) {
 /* line 17, sass/layout/_footer.scss */
 footer.site-footer .footer-col:first-child {
   margin-top: 30px;
+  width: 577px;
+  max-width: 577px;
+}
+/* line 22, sass/layout/_footer.scss */
+footer.site-footer .footer-col:last-child {
+  width: 617px;
+  max-width: 617px;
 }
 @media (min-width: 992px) {
   /* line 10, sass/layout/_footer.scss */
   footer.site-footer .footer-col {
     margin: 30px 0;
   }
-  /* line 25, sass/layout/_footer.scss */
+  /* line 31, sass/layout/_footer.scss */
   footer.site-footer .footer-col:first-child {
     margin-top: 30px;
   }
-  /* line 29, sass/layout/_footer.scss */
+  /* line 35, sass/layout/_footer.scss */
   footer.site-footer .footer-col.footer-col-contact {
     width: 711px;
     max-width: 711px;
   }
 }
-/* line 35, sass/layout/_footer.scss */
+/* line 41, sass/layout/_footer.scss */
 footer.site-footer .footer-col h4 {
   font-weight: bold;
   letter-spacing: 1.2px;
   margin: 34px 0px;
 }
-/* line 40, sass/layout/_footer.scss */
+/* line 46, sass/layout/_footer.scss */
 footer.site-footer .footer-col .text {
   padding: 16px 0px;
 }
-/* line 43, sass/layout/_footer.scss */
+/* line 49, sass/layout/_footer.scss */
 footer.site-footer .footer-col p {
   font-size: 16px;
   font-weight: bold;
@@ -1325,42 +1332,42 @@ footer.site-footer .footer-col p {
   margin-bottom: 0px;
   color: white;
 }
-/* line 51, sass/layout/_footer.scss */
+/* line 57, sass/layout/_footer.scss */
 footer.site-footer .footer-col form {
   margin: 44px 0px;
 }
-/* line 54, sass/layout/_footer.scss */
+/* line 60, sass/layout/_footer.scss */
 footer.site-footer .footer-col form input {
   border-radius: 0px;
   padding: 9px 20px;
 }
 @media (max-width: 1440px) {
-  /* line 60, sass/layout/_footer.scss */
+  /* line 66, sass/layout/_footer.scss */
   footer.site-footer .footer-col form input {
     width: 100%;
   }
 }
-/* line 68, sass/layout/_footer.scss */
+/* line 74, sass/layout/_footer.scss */
 footer.site-footer .footer-col .footer-contacts {
   margin: 48px 0px;
 }
 @media (max-width: 992px) {
-  /* line 68, sass/layout/_footer.scss */
+  /* line 74, sass/layout/_footer.scss */
   footer.site-footer .footer-col .footer-contacts {
     text-align: center;
   }
 }
-/* line 78, sass/layout/_footer.scss */
+/* line 84, sass/layout/_footer.scss */
 footer.site-footer .footer-col .footer-contacts .footer-contact a {
   color: white;
 }
-/* line 82, sass/layout/_footer.scss */
+/* line 88, sass/layout/_footer.scss */
 footer.site-footer .footer-col .footer-contacts .footer-contact .footer-contact-item.location {
   position: relative;
   text-align: center;
   padding: 0px 26px;
 }
-/* line 87, sass/layout/_footer.scss */
+/* line 93, sass/layout/_footer.scss */
 footer.site-footer .footer-col .footer-contacts .footer-contact .footer-contact-item.location:before {
   content: '';
   position: absolute;
@@ -1369,11 +1376,11 @@ footer.site-footer .footer-col .footer-contacts .footer-contact .footer-contact-
   left: 0px;
   background-image: url("./assets/images/icons/map-icon.png");
 }
-/* line 97, sass/layout/_footer.scss */
+/* line 103, sass/layout/_footer.scss */
 footer.site-footer .footer-col .footer-contacts .footer-contact .footer-contact-item.mail {
   position: relative;
 }
-/* line 99, sass/layout/_footer.scss */
+/* line 105, sass/layout/_footer.scss */
 footer.site-footer .footer-col .footer-contacts .footer-contact .footer-contact-item.mail:before {
   content: '';
   position: absolute;
@@ -1385,13 +1392,13 @@ footer.site-footer .footer-col .footer-contacts .footer-contact .footer-contact-
   background-repeat: no-repeat;
   background-size: contain;
 }
-/* line 112, sass/layout/_footer.scss */
+/* line 118, sass/layout/_footer.scss */
 footer.site-footer .footer-col .footer-contacts .footer-contact .footer-contact-item.phone {
   position: relative;
   text-align: center;
   padding: 0px 26px;
 }
-/* line 116, sass/layout/_footer.scss */
+/* line 122, sass/layout/_footer.scss */
 footer.site-footer .footer-col .footer-contacts .footer-contact .footer-contact-item.phone:before {
   content: '';
   position: absolute;
@@ -1402,24 +1409,24 @@ footer.site-footer .footer-col .footer-contacts .footer-contact .footer-contact-
   background-image: url("./assets/images/icons/phone-icon.png");
 }
 @media (max-width: 1480px) {
-  /* line 76, sass/layout/_footer.scss */
+  /* line 82, sass/layout/_footer.scss */
   footer.site-footer .footer-col .footer-contacts .footer-contact {
     flex: 100%;
     max-width: 100%;
   }
 }
-/* line 137, sass/layout/_footer.scss */
+/* line 143, sass/layout/_footer.scss */
 footer.site-footer .footer-col .footer-socials-menu {
   background-color: transparent;
   margin: 23px 0px;
   justify-content: center;
 }
-/* line 141, sass/layout/_footer.scss */
+/* line 147, sass/layout/_footer.scss */
 footer.site-footer .footer-col .footer-socials-menu .navbar-nav.menu {
   margin: 0px;
   flex-direction: unset;
 }
-/* line 145, sass/layout/_footer.scss */
+/* line 151, sass/layout/_footer.scss */
 footer.site-footer .footer-col .footer-socials-menu .navbar-nav.menu li {
   padding: 0px 6px;
 }
