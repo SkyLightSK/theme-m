@@ -16,20 +16,23 @@ footer.site-footer{
 
     &:first-child{
       margin-top: 30px;
-      width: 577px;
-      max-width: 577px;
     }
-    &:last-child{
-      width: 617px;
-      max-width: 617px;
-    }
+
 
     @media (min-width: 992px) {
 
       margin: 30px 0;
 
       &:first-child{
+
         margin-top: 30px;
+        width: 577px;
+        max-width: 577px;
+      }
+
+      &:last-child{
+        width: 617px;
+        max-width: 617px;
       }
 
       &.footer-col-contact{

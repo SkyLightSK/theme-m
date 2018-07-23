@@ -17,14 +17,14 @@
 
 		<div class="site-info">
             <div class="container-fluid">
-                <div class="row text-center">
+                <div class="row text-center justify-content-center">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-lx-4 footer-col">
                         <div class="footer-subscribe-section">
                             <?php Customizer::footer_subscribe_text(); ?>
                         </div>
                         <?php echo do_shortcode('[contact-form-7 id="66" title="Subscription Form"]'); ?>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-lx-5 footer-col footer-col-contact">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-lx-4 footer-col footer-col-contact">
                         <div class="footer-contacts-section">
                             <?php Customizer::footer_contacts_text(); ?>
                         </div>
